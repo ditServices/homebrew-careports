@@ -7,11 +7,11 @@ class Careports < Formula
 
 	depends_on "bison"
 	depends_on "libharu"
-    
+
 	bottle :unneeded
 
 	def install
         system "make"
+				bin.install "build/careports" => "careports"
 	end
 end
-
