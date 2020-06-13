@@ -11,7 +11,7 @@ class Careports < Formula
 	bottle :unneeded
 
 	def install
-        system "make", "install"
+        system "make"
 	end
 end
 
